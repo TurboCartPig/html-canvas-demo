@@ -1,0 +1,43 @@
+{
+	"name": "canvas-test",
+	"version": "1.0.0",
+	"description": "A simple html canvas demo",
+	"main": "main.js",
+	"type": "module",
+	"scripts": {
+		"serve": "web-dev-server --node-resolve --open --watch"
+	},
+	"author": "Dennis Kristiansen <denniskristiansen@protonmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"@web/dev-server": "^0.1.22",
+		"eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"prettier": "^2.3.2"
+	},
+	"prettier": {
+		"trailingComma": "es5",
+		"useTabs": true,
+		"tabWidth": 4,
+		"semi": false
+	},
+	"eslintConfig": {
+		"env": {
+			"browser": true
+		},
+		"parserOptions": {
+			"ecmaVersion": 2015,
+			"sourceType": "module",
+			"ecmaFeatures": {
+				"impliedStrict": true
+			}
+		},
+		"extends": [
+			"eslint:recommended",
+			"prettier"
+		],
+		"rules": {
+			"no-unused-vars": "warn"
+		}
+	}
+}
